@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Counter from './components/Component1';
+import Input from './components/Component2';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       </div>
       <div className="component-container blue">
         <h1>component 2</h1>
-        {/* put component2 RIGHT here */}
+        <Input/>
       </div>
       <div className="component-container green">
         <h1>component 3</h1>
