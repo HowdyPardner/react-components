@@ -2,9 +2,11 @@ import { useState } from 'react'
 import './App.css'
 import Counter from './components/Component1';
 import Input from './components/Component2';
+import RandomName from './components/Component3';
 
 
 function App() {
+const studentsArray = ["Jimmy", "David", "Jenna", "Jeff", "Harley", "Chris"]
 
   return (
     <div className="App">
@@ -18,7 +20,7 @@ function App() {
       </div>
       <div className="component-container green">
         <h1>component 3</h1>
-        {/* put component3 RIGHT here */}
+        <RandomName  studentsArray={studentsArray}/>
       </div>
       <div className="component-container grey">
         <h1>component 4</h1>
