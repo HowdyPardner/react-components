@@ -1,0 +1,11 @@
+#input-component-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-component-container > input button {
+    
+}
