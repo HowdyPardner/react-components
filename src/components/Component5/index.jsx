@@ -9,4 +9,20 @@
 
 
 
+import React, { useState } from 'react'
+import './index.css'
+const ToggleTheme = () => {
+    const [theme, setTheme] = useState('light');
+    const [isLightTheme, setLightTheme] = useState(true)
 
+    let handleClick =() =>{
+      setLightTheme(!isLightTheme);
+    }
+  return (
+    <div className={`toggle-theme-div-component-container ${isLightTheme ? 'light' : 'dark'} `}>
+        <button onClick={handleClick}>Light/Dark Mode!</button>   
+    </div>
+  )
+}
+
+export default ToggleTheme
