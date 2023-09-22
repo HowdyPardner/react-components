@@ -4,6 +4,7 @@ import Counter from './components/Component1';
 import Input from './components/Component2';
 import RandomName from './components/Component3';
 import AddNames from './components/Component4';
+import ToggleTheme from './components/Component5';
 
 
 function App() {
@@ -29,7 +30,7 @@ const studentsArray = ["Jimmy", "David", "Jenna", "Jeff", "Harley", "Chris"]
       </div>
       <div className="component-container purple">
         <h1>component 5</h1>
-        {/* put component5 RIGHT here */}
+        <ToggleTheme />
       </div>
     </div>
   );
