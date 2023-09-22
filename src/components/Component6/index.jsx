@@ -9,3 +9,24 @@
 // • <div> that shows the title of the product
 // • <button> that says "toggle description" that will call handle Visible Toggle when it is clicked
 // • <div> that shows the description AND IS CONDITIONALLY RENDERED BASED ON THE isVisible state.
+
+import React, { useState } from 'react'
+import './index.css'
+const ProductsDetailsToggle = ({productDetails}) => {
+const [isVisible, setIsVisible] = useState(true)
+
+let handleClick = () =>{
+    setIsVisible(!isVisible)
+}
+
+  return (
+    <>
+        <div>{productDetails.title}</div>
+        <div className={`${isVisible ? 'hide' : '' }`}>{productDetails.description}</div>
+        <button onClick={handleClick}>Toggle Description</button>
+    </>
+    
+  )
+}
+
+export default ProductsDetailsToggle

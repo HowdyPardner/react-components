@@ -5,10 +5,12 @@ import Input from './components/Component2';
 import RandomName from './components/Component3';
 import AddNames from './components/Component4';
 import ToggleTheme from './components/Component5';
+import ProductsDetailsToggle from './components/Component6';
 
 
 function App() {
 const studentsArray = ["Jimmy", "David", "Jenna", "Jeff", "Harley", "Chris"]
+const [productDetails, setProductDetails] = useState({title:"A Sweater", description:"This is an awesome sweater"})
 
   return (
     <div className="App">
@@ -31,6 +33,10 @@ const studentsArray = ["Jimmy", "David", "Jenna", "Jeff", "Harley", "Chris"]
       <div className="component-container purple">
         <h1>component 5</h1>
         <ToggleTheme />
+      </div>
+      <div className="component-container yellow">
+        <h1>component 6</h1>
+        <ProductsDetailsToggle productDetails={productDetails}/>
       </div>
     </div>
   );
